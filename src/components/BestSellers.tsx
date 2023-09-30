@@ -1,6 +1,10 @@
 import { Button, Container } from "react-bootstrap"
+import BestSellersCard from "./BestSellersCard"
+
 
 const BestSellers = () => {
+
+   
 
     const listFilter = [
         "All Products",
@@ -12,7 +16,7 @@ const BestSellers = () => {
         <>
             <Container>
                 <h1 className="text-center mt-5 mb-5">Best Sellers</h1>
-                <div className="filter-bar d-flex justify-content-between">
+                <div className="filter-bar d-flex justify-content-between mb-5">
                     <div className="categ-filter">
                         <ul className="d-flex">
                             {listFilter.map((item, index)=>(
@@ -24,6 +28,9 @@ const BestSellers = () => {
                         <Button>Filter</Button>
                     </div>
                 </div>
+                    <div className="best-sellers-content">
+                        <BestSellersCard />
+                    </div>
 
             </Container>
         </>
