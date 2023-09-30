@@ -15,7 +15,7 @@ const BrandBanner = () => {
         <>
             <Container className="w-100 d-flex justify-content-between align-items-center p-5">
                 {brands.map((brand, index) => (
-                    <img src={brand} alt="" />
+                    <img key={index} src={brand} alt="" />
                 ))}
                 
             </Container>
