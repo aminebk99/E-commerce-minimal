@@ -10,7 +10,7 @@ const BestSellersCard = () => {
 
   return (
     <>
-    <div className="best-card">
+    <div className="best-card w-100 d-flex justify-content-between">
         {images.map((image, index) => (
 
         <img key={index} src={image} alt="" />
