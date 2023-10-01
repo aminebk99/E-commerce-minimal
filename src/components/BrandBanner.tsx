@@ -17,7 +17,7 @@ const BrandBanner = () => {
                 <Row className="d-flex justify-content-between align-items-center">
                     {brands.map((brand, index) => (
                         <Col key={index} xl={2} sm={6}>
-                            <img src={brand}  alt="" />
+                        <img src={brand} alt="" />
                         </Col>
 
                     ))}
