@@ -1,6 +1,6 @@
 import { Button, Container } from "react-bootstrap";
 import BestSellersCard from "./BestSellersCard";
-import './bestsellers.css'
+import './bestSellers.css'
 const BestSellers = () => {
     const listFilter = [
         "All Products",
