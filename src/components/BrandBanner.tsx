@@ -13,10 +13,10 @@ const BrandBanner = () => {
     ]
     return (
         <>
-            <Container className="w-100 d-flex justify-content-between align-items-center p-5">
-                <Row>
+            <Container className="w-100 p-5">
+                <Row className="d-flex justify-content-between align-items-center">
                     {brands.map((brand, index) => (
-                        <Col key={index} xl={4} sm={6}>
+                        <Col key={index} xl={2} sm={6}>
                             <img src={brand}  alt="" />
                         </Col>
 
