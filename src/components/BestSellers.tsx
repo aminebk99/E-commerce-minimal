@@ -1,8 +1,6 @@
 import { Button, Container } from "react-bootstrap";
 import BestSellersCard from "./BestSellersCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilter } from "@fortawesome/free-solid-svg-icons"; // Import the actual Font Awesome icon
-
+import './bestsellers.css'
 const BestSellers = () => {
     const listFilter = [
         "All Products",
@@ -18,13 +16,13 @@ const BestSellers = () => {
                     <div className="categ-filter">
                         <ul className="d-flex">
                             {listFilter.map((item, index) => (
-                                <li className="me-5" key={index}>{item}</li>
+                                <li className="me-5" key={index}><a href="">{item}</a></li>
                             ))}
                         </ul>
                     </div>
                     <div className="filter-button">
-                        <Button style={{background: 'black', border: "none", padding: "10px 20px ", borderRadius: '0Px'}}>
-                             Show All
+                        <Button style={{ background: 'black', border: "none", padding: "10px 20px ", borderRadius: '0Px' }}>
+                            Show All
                         </Button>
                     </div>
                 </div>

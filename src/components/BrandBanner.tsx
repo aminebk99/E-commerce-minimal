@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 
 import brand1 from "../../public/brands/brand-1.png"
 import brand2 from "../../public/brands/brand-2.png"
@@ -9,15 +9,20 @@ import brand5 from "../../public/brands/brand-5.png"
 const BrandBanner = () => {
 
     const brands = [
-        brand1, brand2,brand3, brand4, brand5
+        brand1, brand2, brand3, brand4, brand5
     ]
     return (
         <>
             <Container className="w-100 d-flex justify-content-between align-items-center p-5">
-                {brands.map((brand, index) => (
-                    <img key={index} src={brand} alt="" />
-                ))}
-                
+                <Row>
+                    {brands.map((brand, index) => (
+                        <Col key={index} xl={4} sm={6}>
+                            <img src={brand} alt="" />
+                        </Col>
+
+                    ))}
+                </Row>
+
             </Container>
         </>
     )
