@@ -17,7 +17,7 @@ const BrandBanner = () => {
                 <Row>
                     {brands.map((brand, index) => (
                         <Col key={index} xl={4} sm={6}>
-                            <img src={brand} alt="" />
+                            <img src={brand}  alt="" />
                         </Col>
 
                     ))}
